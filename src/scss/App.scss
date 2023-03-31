@@ -1,6 +1,12 @@
 @import './utils/reset';
 @import './utils/colors';
+@import './utils/flexBox';
 
 * {
   background-color: $color1;
+}
+
+.containerPagina {
+  @include flexBox(column,space-between,space-between);
+
 }

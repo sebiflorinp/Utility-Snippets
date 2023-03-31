@@ -1,0 +1,31 @@
+@import './utils/colors';
+@import './utils/flexBox';
+@import './utils/fonts';
+@import './utils/reset';
+
+.containerFooter{
+  color: $color2;
+  font-size: 1.65vw;
+  font-family: $RobotoMono;
+  padding: 1vw;
+  border-top-style: solid; 
+  border-top-width: 0.29vw;
+  @include flexBox(column,flex-start,center);
+  .containerContacte{
+    @include flexBox(row,flex-start,center);
+    gap: 1.5vw;
+    div {
+      @include flexBox(row,flex-start,center);
+    }
+    .containerGitHub{
+      @include flexBox(row,flex-start,center);
+      gap: 0.4em;
+    }
+    .icon{
+      max-width: 4vw;
+    }
+    .iconGit{
+      max-width: 2.2vw;
+    }
+  }
+}

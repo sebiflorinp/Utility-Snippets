@@ -1,6 +1,12 @@
 @font-face {
-  font-family: Roboto-Flex;
+  font-family: RobotoFlex;
   src: url(../../../public/fonts/RobotoFlex.ttf);
 }
 
-$Roboto-Flex: Roboto-Flex;
+@font-face {
+  font-family: RobotoMono;
+  src: url(../../../public/fonts/RobotoMono.ttf);
+}
+
+$RobotoFlex: RobotoFlex;
+$RobotoMono: RobotoMono;
