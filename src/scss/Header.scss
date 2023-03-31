@@ -1,0 +1,21 @@
+@import './utils/reset';
+@import './utils/colors';
+@import './utils/flexBox';
+@import './utils/fonts';
+.containerHeader{
+  @include flexBox(row,space-around,center);
+  border-bottom-style: solid;
+  border-bottom-color: $color2;
+  border-bottom-width: 0.25em;
+  padding: 2em;
+  .buttonHeader {
+    background-color: rgba(211, 125, 125, 0);
+    font-size: 2.05vw;
+    color: $color2;
+    font-family: $Roboto-Flex;
+  }
+  .buttonHeader:hover{
+    text-shadow: 0 0 0.95em currentColor;
+  }
+}
+
